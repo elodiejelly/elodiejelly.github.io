@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example site</title>
+    <style>
+        body {
+            background-color: #FFFFCC;
+            color: #FF00FF;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            height: 100vh;
+            border-collapse: collapse;
+        }
+
+        td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        marquee {
+            color: #00FF00;
+            font-size: 24px;
+        }
+
+        .followers-section {
+            padding: 20px;
+            background-color: #FF99CC;
+        }
+
+        .posts-section {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #99CCFF;
+        }
+
+        .follower, .post {
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            text-align: left;
+        }
+
+        .follower img, .post img {
+            border-radius: 10%;
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        .username, .post-username, .second-username, .post-second-username {
+            font-size: 16px;
+        }
+
+        .second-username, .post-second-username {
+            font-size: 12px;
+            color: #999;
+        }
+
+        .post-content {
+            margin-top: 100px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <h1>Welcome to sampleuser's super cool webpage!!!</h1>
+                <img src="balloons.gif" alt="balloons">
+                <p>This is my example site woowwww its soo cooool.</p>
+                <marquee direction="left" behavior="scroll" scrollamount="10">Scrolling text goes here!</marquee>
+                <p>Thanks for visiting!</p>
+
+                <div class="followers-section">
+                    <h2>Followers (3)</h2>
+                    <div class="follower">
+                        <img src="black.png" alt="follower1">
+                        <div>
+                            <p class="username">FakeUser1</p>
+                            <p class="second-username">username1.online</p>
+                        </div>
+                    </div>
+                    <div class="follower">
+                        <img src="black.png" alt="follower2">
+                        <div>
+                            <p class="username">FakeUser2</p>
+                            <p class="second-username">username2.com</p>
+                        </div>
+                    </div>
+                    <div class="follower">
+                        <img src="black.png" alt="follower3">
+                        <div>
+                            <p class="username">FakeUser3</p>
+                            <p class="second-username">username3.net</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="posts-section">
+                    <h2>Posts</h2>
+                    <div class="post">
+                        <img src="black.png" alt="postUser">
+                        <div>
+                            <p class="post-username">sampleuser</p>
+                            <p class="post-second-username">samples.dev</p>
+                        </div>
+                        <div class="post-content">
+                            <p>This is a sample post. this entire fake thing took like 2 seconds yayy !</p>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

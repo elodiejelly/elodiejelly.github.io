@@ -20,7 +20,7 @@ body {
     overflow: hidden;
     width: 536px;
     height: 365px;
-    background-color: purple;
+    background-color: rgb(128, 0, 128);
     box-shadow: 0 0 5000px rgba(128, 0, 128, 0.5);
     color: white;
     font: 1.3rem Inconsolata, monospace;
@@ -61,6 +61,7 @@ body {
     left: 70px;
     color: white;
     font: 1.3rem Inconsolata, monospace;
+    box-shadow: 0 0 5000px rgba(128, 0, 128, 0.5);
     z-index: 1;
 }
 
@@ -116,4 +117,21 @@ body {
     width: auto;
     height: 100px;
     z-index: 1;
+}
+
+@font-face {
+    font-family: 'Lavispeak';
+    src: url('Lavispeak.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#handwirting {
+    font-family: 'lavispeak', sans-serif;
+    position: absolute;
+    top: -230px;
+    left: 20px;
+    font-size: 24px;
+    color: white;
+    z-index: 2;
 }
