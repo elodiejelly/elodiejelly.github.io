@@ -19,6 +19,7 @@ body {
     max-width: 1000px;
     margin: 10px auto;
     display: flex;
+    
 }
 
 .profile-and-following {
@@ -35,6 +36,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .profile-picture {
@@ -100,6 +102,7 @@ body {
     border-radius: 10px;
     background-color: #ffffff;
     overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .post {
