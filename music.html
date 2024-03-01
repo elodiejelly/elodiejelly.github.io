@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+</head>
+<body>
+<button id="playButton">=^-^=</button>
+<script>
+    const songs=['ns.mp3','cf.mp3','sl.mp3'],audio=new Audio(songs[0]);let isPlaying=!1;
+    function togglePlay(){isPlaying?(audio.pause()):(audio.play()),isPlaying=!isPlaying;}
+    function playNextSong(){audio.src=songs[++currentSongIndex%songs.length],audio.play(),isPlaying=!0;}
+    document.getElementById('playButton').addEventListener('click',togglePlay);
+    audio.addEventListener('ended',playNextSong);
+</script>
+</body>
+</html>
